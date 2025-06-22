@@ -1,0 +1,1 @@
+pub const MONKEY_IMAGE: &[u8] = include_bytes!("../banana.png"); 
