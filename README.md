@@ -8,12 +8,12 @@ monkey banana
 cargo build --target wasm32-unknown-unknown --release
 ```
 
-The compiled WASM binary will be available in `target/wasm32-unknown-unknown/release/alkane_monkey.wasm`. 
+The compiled WASM binary will be available in `target/wasm32-unknown-unknown/release/alkanes_monkey.wasm`. 
 
 ## Deployment
 
 ```bash
-oyl alkane new-contract -c ./target/alkanes/wasm32-unknown-unknown/release/alkane_monkey.wasm -data 1,0 -p oylnet
+oyl alkane new-contract -c ./target/alkanes/wasm32-unknown-unknown/release/alkanes_monkey.wasm -data 1,0 -p oylnet
 ```
 
 ## Tracing
