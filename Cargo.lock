@@ -30,28 +30,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "alkane-pandas-ap69"
-version = "0.1.0"
-dependencies = [
- "alkanes",
- "alkanes-runtime",
- "alkanes-support",
- "anyhow",
- "bitcoin 0.32.6",
- "flate2",
- "hex",
- "hex_lit",
- "metashrew-core",
- "metashrew-support",
- "once_cell",
- "ordinals 0.2.3",
- "protorune",
- "protorune-support",
- "serde_json",
- "wasm-bindgen-test",
-]
-
-[[package]]
 name = "alkanes"
 version = "0.2.3"
 source = "git+https://github.com/kungfuflex/alkanes-rs#8e44829f0bbfe5c076d4a3adaee96ed8dbb4cfec"
@@ -95,6 +73,28 @@ dependencies = [
  "quote",
  "serde_json",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "alkanes-monkey"
+version = "0.1.0"
+dependencies = [
+ "alkanes",
+ "alkanes-runtime",
+ "alkanes-support",
+ "anyhow",
+ "bitcoin 0.32.6",
+ "flate2",
+ "hex",
+ "hex_lit",
+ "metashrew-core",
+ "metashrew-support",
+ "once_cell",
+ "ordinals 0.2.3",
+ "protorune",
+ "protorune-support",
+ "serde_json",
+ "wasm-bindgen-test",
 ]
 
 [[package]]
