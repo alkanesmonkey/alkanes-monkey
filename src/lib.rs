@@ -211,6 +211,10 @@ impl BananaMint {
       return Err(anyhow!("Must send at least 1000 Monkey to mint"));
     }
 
+    if context.incoming_alkanes.0.len() != 1 {
+      return Err(anyhow!("Must send monkey to mint"));
+    }
+
     self.add_tx_hash(&txid)?;
 
     let mut response = CallResponse::default();
@@ -225,7 +229,7 @@ impl BananaMint {
       let transfer = context.incoming_alkanes.0[0].clone();
       if transfer.value != MONKEY_PER_BURN {
         return Err(anyhow!(
-          "Not correct $monkey supplied to mint"
+          "Not correct monkey supplied to mint"
         ));
       }
       let value = (self.block()[67] ^ txid.as_byte_array()[31]) as u128 * 100;
